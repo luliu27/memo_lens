@@ -5,8 +5,8 @@ use std::env;
 fn main() -> Result<()> {
     // Get the database path from command-line arguments
     let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        eprintln!("Usage: cargo run -- <database-path>");
+    if args.len() != 2 {
+        eprintln!("Usage: {} <database-path>", args[0]);
         std::process::exit(1);
     }
 
