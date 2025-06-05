@@ -5,3 +5,7 @@ edition = "2024"
 
 [dependencies]
 rusqlite = { version = "0.30.0", features = ["bundled"] }
+
+[[bin]]
+name = "sqlite_schema_discovery"
+path = "src/sqlite_schema_discovery.rs"
